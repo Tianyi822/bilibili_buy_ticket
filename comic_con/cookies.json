@@ -1,0 +1,15 @@
+[
+  {
+    "domain": ".bilibili.com",
+    "expirationDate": 1,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "00",
+    "path": "/",
+    "sameSite": null,
+    "secure": false,
+    "session": false,
+    "storeId": null,
+    "value": "undefined"
+  }
+]
