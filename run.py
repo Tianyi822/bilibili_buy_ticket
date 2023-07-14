@@ -77,7 +77,7 @@ def run(cookies, robot_config, ticket_config):
 
 if __name__ == '__main__':
     # 加载 cookies.json 文件
-    cookies = build_cookies_list('cookies.json')
+    cookies = build_cookies_list('comic_con/cookies.json')
 
     # 加载票务配置文件
     ticket_config = Config("comic_con/ticket_config.ini").get_content("beijing_comic_con")

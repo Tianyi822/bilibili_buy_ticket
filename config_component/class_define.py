@@ -1,5 +1,6 @@
 import os
 import configparser
+import sys
 
 
 class Config(object):
@@ -9,9 +10,10 @@ class Config(object):
 
     def __init__(self, config_filename):
         # Linux 路径
+        sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         file_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), config_filename).replace('\\', '/')
         self.cf = configparser.ConfigParser()
-        self.cf.read(file_path)
+        self.cf.read(file_path, encoding='utf-8')
 
     def get_sections(self):
         return self.cf.sections()
